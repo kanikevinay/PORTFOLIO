@@ -44,17 +44,17 @@
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Motivated engineering student with a strong foundation in Computer
- Science and AI, seeking to apply technical and
- analytical skills to contribute to innovative research.</p>
+    <p>Highly motivated Cybersecurity Engineer and SOC L1 Analyst currently employed at Exposys Data Labs. Experienced in automated security infrastructure, real-time alert triage, and incident classification. Skilled in leveraging Python 3, cloud environments (Azure/AWS), and advanced logic to resolve complex software security challenges and streamline triage response workflows.</p>
     
     <div class="skills">
-      <h3>Technical Skills:</h3>
+      <h3>Technical & Security Skills:</h3>
       <ul>
-        <li><strong>Programming:</strong> C, Python, HTML, CSS</li>
-        <li><strong>Technologies:</strong> AI, Cloud Computing, Data Structures, Azure</li>
-        <li><strong>Database:</strong> MySQL</li>
-        <li><strong>Tools:</strong> Jupyter Notebook, VS Code, Colab, MS Excel </li>
+        <li><strong>Programming Languages:</strong> Python 3, SQL</li>
+        <li><strong>SOC / SIEM Operations:</strong> Log Analysis, Real-Time Alert Triage, Incident Classification, Alert Correlation</li>
+        <li><strong>Security Tools:</strong> Splunk, Wireshark, Nmap, Kali Linux, Git/GitHub, Docker, Burp Suite</li>
+        <li><strong>Cloud & Databases:</strong> Microsoft Azure, AWS IAM, PostgreSQL, Supabase</li>
+        <li><strong>Relevant Coursework:</strong> Network Security, Operating Systems, DBMS, Cloud Computing, Threat Management, Cryptography</li>
+        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Technical Reporting, Adaptability, Incident Documentation</li>
       </ul>
     </div>
   </section>
@@ -63,6 +63,21 @@
   <section id="certifications" class="certifications">
     <h2>Certifications</h2>
     <div class="cert-list">
+      <div class="cert-card">
+        <h3>TCS CodeVita Season 13</h3>
+        <p><strong>Global Rank:</strong> 2547</p>
+        <p><strong>Issuing Organization:</strong> Tata Consultancy Services (TCS)</p>
+        <p><strong>Date Earned:</strong> 2026</p>
+        <a href="TCS_CodeVita_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+      </div>
+      
+      <div class="cert-card">
+        <h3>Quantum Algorithm Fundamentals</h3>
+        <p><strong>Issuing Organization:</strong> Qubitech & WISER</p>
+        <p><strong>Date Earned:</strong> 2026</p>
+        <a href="Quantum_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+      </div>
+
       <div class="cert-card">
         <h3>AI and IoT</h3>
         <p><strong>Issuing Organization:</strong> IEEE (VIT)</p>
@@ -132,6 +147,28 @@
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-list">
+      <div class="project-card">
+        <h3>Cloud Guard: Automated Event-Driven Incident Response</h3>
+        <p>Developed a production-grade, event-driven security automation pipeline on AWS. Automatically detects critical firewall misconfigurations (open SSH/RDP ports 22/3389 to 0.0.0.0/0) via CloudTrail and EventBridge, triggers a serverless Lambda function to revoke the rule in under 10 seconds, and dispatches detailed Slack notifications.</p>
+        <a href="https://github.com/kanikevinay/aws-automated-incident-response" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>SOC Copilot: AI-Powered Threat Detection</h3>
+        <p>Built a local security analysis platform combining hybrid Machine Learning (Isolation Forest and Random Forest) with rule-based detection. Features PyQt6-based log ingestion (CSV, JSON, Syslog, EVTX), real-time anomaly detection, risk scoring, and local AI-generated remediation guidance with zero cloud dependency.</p>
+        <a href="https://github.com/kanikevinay/advanced-SOC-Copilot-" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Email Shield: Real-Time Phishing Threat Analysis</h3>
+        <p>Created an automated heuristics engine for live phishing analysis of intercepted Gmail streams. Built with a FastAPI backend, background mailbox polling, heuristic risk scoring, and a dynamic frontend dashboard with AJAX refreshes. Integrated with Supabase for persistent threat logging.</p>
+        <a href="https://github.com/kanikevinay/email_shield_soc" target="_blank">View Project</a>
+        <a href="https://email-shield-soc.onrender.com" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Secure Image Encryption & Decryption Portal</h3>
+        <p>Designed a secure Flask web application supporting 3DES-CBC (with HMAC-SHA256) and authenticated AES-GCM encryption. Implemented PBKDF2-SHA256 key derivation, custom file headers for auto-detecting algorithms, and a responsive frontend with decryption key validation and image previews.</p>
+        <a href="https://github.com/kanikevinay/Image-Encryption-and-Decryption" target="_blank">View Project</a>
+        <a href="https://image-encryption-and-decryption-6j1n.onrender.com" target="_blank">Live Demo</a>
+      </div>
       <div class="project-card">
         <h3>Real-Time Pet Tracking and GPS Monitoring System</h3>
         <p>Developed a comprehensive IoT-based solution for real-time pet location tracking using GPS technology. Features include live location monitoring, geofencing alerts, and mobile application integration for pet owners to ensure their pets' safety and security.</p>
