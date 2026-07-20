@@ -3,215 +3,535 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KANIKE VINAY | AI & Data Science Student</title>
+  <title>Kanike Vinay | AI &amp; Computer Science Student</title>
+  <meta name="description" content="Kanike Vinay — AI &amp; Computer Science student, Python developer, cybersecurity enthusiast. Building projects in cloud security, automation, and machine learning.">
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body { background: #111; color: #fff; font-family: Arial, sans-serif; }
-    .hero { padding: 50px; text-align: center; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
-    <nav class="navbar">
-      <div class="logo">KANIKE VINAY</div>
-      <ul class="nav-links">
+    <nav class="navbar" id="navbar">
+      <div class="logo">Kanike Vinay</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Hello, I'm <span>KANIKE VINAY</span></h1>
-      <p>Artificial Intelligence & Computer Science Student | Python Web Developer | SOC Analyst</p>
-      <a href="#contact" class="btn">Hire Me</a>
+      <p class="hero-greeting">Hi there, I'm</p>
+      <h1>Kanike Vinay</h1>
+      <p class="hero-sub">Artificial Intelligence &amp; Computer Science Student &nbsp;&middot;&nbsp; Python Developer &nbsp;&middot;&nbsp; Cybersecurity Enthusiast</p>
+      <div class="hero-tags">
+        <span class="tag">AWS</span>
+        <span class="tag">Azure</span>
+        <span class="tag">Python</span>
+        <span class="tag">Splunk</span>
+        <span class="tag">Machine Learning</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
     </div>
     <div class="profile-pic">
-      <img src="assets/profile.png" alt="Profile Picture">
+      <img src="assets/profile.png" alt="Kanike Vinay">
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Highly motivated Cybersecurity Engineer and SOC L1 Analyst currently employed at Exposys Data Labs. Experienced in automated security infrastructure, real-time alert triage, and incident classification. Skilled in leveraging Python 3, cloud environments (Azure/AWS), and advanced logic to resolve complex software security challenges and streamline triage response workflows.</p>
-    
-    <div class="skills">
-      <h3>Technical & Security Skills:</h3>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python 3, SQL</li>
-        <li><strong>SOC / SIEM Operations:</strong> Log Analysis, Real-Time Alert Triage, Incident Classification, Alert Correlation</li>
-        <li><strong>Security Tools:</strong> Splunk, Wireshark, Nmap, Kali Linux, Git/GitHub, Docker, Burp Suite</li>
-        <li><strong>Cloud & Databases:</strong> Microsoft Azure, AWS IAM, PostgreSQL, Supabase</li>
-        <li><strong>Relevant Coursework:</strong> Network Security, Operating Systems, DBMS, Cloud Computing, Threat Management, Cryptography</li>
-        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Technical Reporting, Adaptability, Incident Documentation</li>
-      </ul>
+  <section id="about" class="about reveal">
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>I'm a highly motivated Cybersecurity Engineer currently intern at Exposys Data Labs. I work on automated security infrastructure, real-time alert triage, and incident classification. I enjoy leveraging Python, cloud platforms like Azure and AWS, and sharp problem-solving to tackle complex software security challenges and streamline triage workflows.</p>
+        <p>When I'm not writing code or investigating alerts, I'm exploring new technologies, contributing to college events, and working on personal projects that sit at the intersection of AI and security.</p>
+      </div>
+      <div class="skills-panel">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>
+            <span class="skill-cat">Languages</span>
+            <span class="skill-val">Python 3, SQL, MySQL</span>
+          </li>
+          <li>
+            <span class="skill-cat">Machine Learning</span>
+            <span class="skill-val">Regression, Classification, Clustering, Model Evaluation</span>
+          </li>
+          <li>
+            <span class="skill-cat">Deep Learning</span>
+            <span class="skill-val">Neural Networks, CNN, RNN</span>
+          </li>
+          <li>
+            <span class="skill-cat">Generative AI</span>
+            <span class="skill-val">Large Language Models (LLMs), Prompt Engineering</span>
+          </li>
+          <li>
+            <span class="skill-cat">Data Analysis</span>
+            <span class="skill-val">EDA, Data Cleaning, Preprocessing, Data Validation</span>
+          </li>
+          <li>
+            <span class="skill-cat">Libraries &amp; Tools</span>
+            <span class="skill-val">NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, Streamlit, Colab, Jupyter Notebook</span>
+          </li>
+          <li>
+            <span class="skill-cat">Security Operations</span>
+            <span class="skill-val">Log Analysis, Alert Triage, Incident Classification, Alert Correlation</span>
+          </li>
+          <li>
+            <span class="skill-cat">Security Tools</span>
+            <span class="skill-val">Splunk, Wireshark, Nmap, Kali Linux, Docker, Burp Suite</span>
+          </li>
+          <li>
+            <span class="skill-cat">Cloud &amp; Databases</span>
+            <span class="skill-val">Microsoft Azure, AWS IAM, PostgreSQL, Supabase</span>
+          </li>
+          <li>
+            <span class="skill-cat">Coursework</span>
+            <span class="skill-val">Network Security, Operating Systems, DBMS, Cloud Computing, Cryptography</span>
+          </li>
+          <li>
+            <span class="skill-cat">Soft Skills</span>
+            <span class="skill-val">Problem-Solving, Communication, Teamwork, Team Collaboration, Technical Reporting</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Certifications Section -->
-  <section id="certifications" class="certifications">
-    <h2>Certifications</h2>
+  <section id="certifications" class="certifications reveal">
+    <div class="section-header">
+      <h2>Certifications</h2>
+      <p class="section-sub">Credentials and courses I've completed</p>
+    </div>
     <div class="cert-list">
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#127942;</div>
+          <span class="cert-year">2026</span>
+        </div>
         <h3>TCS CodeVita Season 13</h3>
-        <p><strong>Global Rank:</strong> 2547</p>
-        <p><strong>Issuing Organization:</strong> Tata Consultancy Services (TCS)</p>
-        <p><strong>Date Earned:</strong> 2026</p>
-        <a href="TCS_CodeVita_certificate.pdf" target="_blank" class="btn">View Certificate</a>
-      </div>
-      
-      <div class="cert-card">
-        <h3>Quantum Algorithm Fundamentals</h3>
-        <p><strong>Issuing Organization:</strong> Qubitech & WISER</p>
-        <p><strong>Date Earned:</strong> 2026</p>
-        <a href="Quantum_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">Tata Consultancy Services</p>
+        <p class="cert-detail">Global Rank: <strong>2547</strong></p>
+        <a href="TCS_CodeVita_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
 
-      <div class="cert-card">
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#9883;</div>
+          <span class="cert-year">2026</span>
+        </div>
+        <h3>Quantum Algorithm Fundamentals</h3>
+        <p class="cert-issuer">Qubitech &amp; WISER</p>
+        <a href="Quantum_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
+      </div>
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128200;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>AI and IoT</h3>
-        <p><strong>Issuing Organization:</strong> IEEE (VIT)</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="VIT_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">IEEE (VIT)</p>
+        <a href="VIT_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128187;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>Python Internship</h3>
-        <p><strong>Issuing Organization:</strong> Slash Mark IT Solutions</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="Python_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">Slash Mark IT Solutions</p>
+        <a href="Python_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#9729;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>Amazon Web Services</h3>
-        <p><strong>Issuing Organization:</strong> APSSDC</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="AWS_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">APSSDC</p>
+        <a href="AWS_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
-        <h3>Data Structures & Algorithms (DSA)</h3>
-        <p><strong>Issuing Organization:</strong> EXCLER</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="ExcelR_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128268;</div>
+          <span class="cert-year">2024</span>
+        </div>
+        <h3>Data Structures &amp; Algorithms</h3>
+        <p class="cert-issuer">EXCLER</p>
+        <a href="ExcelR_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128196;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>Cracking Coding Interviews</h3>
-        <p><strong>Issuing Organization:</strong> EXCLER</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="ExcelR_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">EXCLER</p>
+        <a href="ExcelR_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128295;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>Software Automation Testing</h3>
-        <p><strong>Issuing Organization:</strong> EDUREKA</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="Edureka_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">EDUREKA</p>
+        <a href="Edureka_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128113;</div>
+          <span class="cert-year">2024</span>
+        </div>
         <h3>National Service Scheme</h3>
-        <p><strong>Issuing Organization:</strong> JNTUA</p>
-        <p><strong>Date Earned:</strong> 2024</p>
-        <a href="NSS_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">JNTUA</p>
+        <a href="NSS_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#128274;</div>
+          <span class="cert-year">2025</span>
+        </div>
         <h3>Cyber Job Simulation</h3>
-        <p><strong>Issuing Organization:</strong> Deloitte</p>
-        <p><strong>Date Earned:</strong> 2025</p>
-        <a href="Deloitte_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">Deloitte</p>
+        <a href="Deloitte_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
-      
-      <div class="cert-card">
+
+      <div class="cert-card reveal-child">
+        <div class="cert-top">
+          <div class="cert-icon">&#9729;&#65039;</div>
+          <span class="cert-year">2025</span>
+        </div>
         <h3>Azure Fundamentals</h3>
-        <p><strong>Issuing Organization:</strong> Microsoft</p>
-        <p><strong>Date Earned:</strong> 2025</p>
-        <a href="Azure_certificate.pdf" target="_blank" class="btn">View Certificate</a>
+        <p class="cert-issuer">Microsoft</p>
+        <a href="Azure_certificate.pdf" target="_blank" class="cert-link">View Certificate &rarr;</a>
       </div>
+
+    </div>
+  </section>
+
+  <!-- Events & Leadership Section -->
+  <section id="events" class="events reveal">
+    <div class="section-header">
+      <h2>Events &amp; Leadership</h2>
+      <p class="section-sub">How I contribute beyond the classroom</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="event-card reveal-child">
+        <div class="event-card-left">
+          <div class="event-date-block">
+            <span class="event-month">Dec</span>
+            <span class="event-day">29</span>
+            <span class="event-year-num">2025</span>
+          </div>
+          <div class="event-line"></div>
+        </div>
+
+        <div class="event-card-right">
+          <div class="event-role-badge">Event Organizer</div>
+          <h3 class="event-name">TechTrotter 2K25</h3>
+          <p class="event-venue">&#128205; St. John's College of Engineering and Technology</p>
+          <p class="event-type-label">College Technical Fest &nbsp;&middot;&nbsp; December 2025</p>
+
+          <p class="event-desc">
+            As the organizer of TechTrotter 2K25, I led the planning and execution of one of our college's flagship technical events, aimed at fostering innovation, collaboration, and technical excellence among students.
+          </p>
+          <p class="event-desc">
+            The event brought together participants from various departments to engage in technical competitions, project showcases, coding challenges, and knowledge-sharing activities. From coordinating with faculty members and student volunteers to managing event logistics, registrations, scheduling, and participant engagement, I played an active role in ensuring the event's success.
+          </p>
+
+          <div class="event-responsibilities">
+            <h4>Key Responsibilities</h4>
+            <ul>
+              <li>Event planning and end-to-end coordination</li>
+              <li>Managing participant registrations and communication</li>
+              <li>Coordinating with faculty, judges, and volunteers</li>
+              <li>Organizing technical competitions and activities</li>
+              <li>Handling event promotion and outreach</li>
+              <li>Ensuring smooth execution throughout the event</li>
+            </ul>
+          </div>
+
+          <div class="event-achievements">
+            <h4>Outcomes</h4>
+            <ul>
+              <li>Successfully conducted the event with strong student participation</li>
+              <li>Enhanced collaboration among students from different disciplines</li>
+              <li>Created a platform for students to showcase technical talents and innovative ideas</li>
+              <li>Strengthened my own leadership, communication, and project management skills</li>
+            </ul>
+          </div>
+
+          <div class="event-tags">
+            <span class="etag">Dec 2025</span>
+            <span class="etag">St. John's CET</span>
+            <span class="etag">Technical Fest</span>
+            <span class="etag etag-highlight">Organizer</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
+  <section id="projects" class="projects reveal">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <p class="section-sub">Things I've built that I'm proud of</p>
+    </div>
     <div class="project-list">
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#9749;</span>
+          <div class="project-links">
+            <a href="https://github.com/kanikevinay/aws-automated-incident-response" target="_blank">GitHub</a>
+          </div>
+        </div>
         <h3>Cloud Guard: Automated Event-Driven Incident Response</h3>
-        <p>Developed a production-grade, event-driven security automation pipeline on AWS. Automatically detects critical firewall misconfigurations (open SSH/RDP ports 22/3389 to 0.0.0.0/0) via CloudTrail and EventBridge, triggers a serverless Lambda function to revoke the rule in under 10 seconds, and dispatches detailed Slack notifications.</p>
-        <a href="https://github.com/kanikevinay/aws-automated-incident-response" target="_blank">View Project</a>
+        <p>Developed a production-grade, event-driven security automation pipeline on AWS. Automatically detects critical firewall misconfigurations (open SSH/RDP ports to 0.0.0.0/0) via CloudTrail and EventBridge, triggers a serverless Lambda function to revoke the rule in under 10 seconds, and dispatches detailed Slack notifications.</p>
+        <div class="tech-tags">
+          <span class="ttag">AWS Lambda</span>
+          <span class="ttag">EventBridge</span>
+          <span class="ttag">Python</span>
+          <span class="ttag">CloudTrail</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#128273;</span>
+          <div class="project-links">
+            <a href="https://github.com/kanikevinay/advanced-SOC-Copilot-" target="_blank">GitHub</a>
+          </div>
+        </div>
         <h3>SOC Copilot: AI-Powered Threat Detection</h3>
         <p>Built a local security analysis platform combining hybrid Machine Learning (Isolation Forest and Random Forest) with rule-based detection. Features PyQt6-based log ingestion (CSV, JSON, Syslog, EVTX), real-time anomaly detection, risk scoring, and local AI-generated remediation guidance with zero cloud dependency.</p>
-        <a href="https://github.com/kanikevinay/advanced-SOC-Copilot-" target="_blank">View Project</a>
+        <div class="tech-tags">
+          <span class="ttag">Python</span>
+          <span class="ttag">Machine Learning</span>
+          <span class="ttag">PyQt6</span>
+          <span class="ttag">SIEM</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#128140;</span>
+          <div class="project-links">
+            <a href="https://github.com/kanikevinay/email_shield_soc" target="_blank">GitHub</a>
+            <a href="https://email-shield-soc.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
         <h3>Email Shield: Real-Time Phishing Threat Analysis</h3>
         <p>Created an automated heuristics engine for live phishing analysis of intercepted Gmail streams. Built with a FastAPI backend, background mailbox polling, heuristic risk scoring, and a dynamic frontend dashboard with AJAX refreshes. Integrated with Supabase for persistent threat logging.</p>
-        <a href="https://github.com/kanikevinay/email_shield_soc" target="_blank">View Project</a>
-        <a href="https://email-shield-soc.onrender.com" target="_blank">Live Demo</a>
+        <div class="tech-tags">
+          <span class="ttag">FastAPI</span>
+          <span class="ttag">Supabase</span>
+          <span class="ttag">Python</span>
+          <span class="ttag">Gmail API</span>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Secure Image Encryption & Decryption Portal</h3>
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#128274;</span>
+          <div class="project-links">
+            <a href="https://github.com/kanikevinay/Image-Encryption-and-Decryption" target="_blank">GitHub</a>
+            <a href="https://image-encryption-and-decryption-6j1n.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
+        <h3>Secure Image Encryption &amp; Decryption Portal</h3>
         <p>Designed a secure Flask web application supporting 3DES-CBC (with HMAC-SHA256) and authenticated AES-GCM encryption. Implemented PBKDF2-SHA256 key derivation, custom file headers for auto-detecting algorithms, and a responsive frontend with decryption key validation and image previews.</p>
-        <a href="https://github.com/kanikevinay/Image-Encryption-and-Decryption" target="_blank">View Project</a>
-        <a href="https://image-encryption-and-decryption-6j1n.onrender.com" target="_blank">Live Demo</a>
+        <div class="tech-tags">
+          <span class="ttag">Flask</span>
+          <span class="ttag">AES-GCM</span>
+          <span class="ttag">Cryptography</span>
+          <span class="ttag">Python</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#128225;</span>
+          <div class="project-links">
+            <a href="https://real-time-pet-tracking-and-gps.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
         <h3>Real-Time Pet Tracking and GPS Monitoring System</h3>
         <p>Developed a comprehensive IoT-based solution for real-time pet location tracking using GPS technology. Features include live location monitoring, geofencing alerts, and mobile application integration for pet owners to ensure their pets' safety and security.</p>
-        <a href="https://real-time-pet-tracking-and-gps.onrender.com" target="_blank">View Live Demo</a>
+        <div class="tech-tags">
+          <span class="ttag">IoT</span>
+          <span class="ttag">GPS</span>
+          <span class="ttag">Geofencing</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#9729;</span>
+          <div class="project-links">
+            <a href="https://github.com/kanikevinay/FILE-STORAGE-AND-SHARING-WITH-EFS-AND-EC2" target="_blank">GitHub</a>
+          </div>
+        </div>
         <h3>File Storage and Sharing with EFS and EC2</h3>
-        <p>Built a scalable cloud-based file storage and sharing platform using Amazon Web Services. Implemented using Amazon EFS (Elastic File System) and EC2 instances to provide secure, distributed file storage with high availability and seamless file sharing capabilities across multiple users.</p>
-        <a href="https://github.com/kanikevinay/FILE-STORAGE-AND-SHARING-WITH-EFS-AND-EC2" target="_blank">View Project</a>
+        <p>Built a scalable cloud-based file storage and sharing platform using Amazon Web Services. Implemented using Amazon EFS and EC2 instances to provide secure, distributed file storage with high availability and seamless file sharing capabilities across multiple users.</p>
+        <div class="tech-tags">
+          <span class="ttag">AWS EFS</span>
+          <span class="ttag">EC2</span>
+          <span class="ttag">Cloud</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#128663;</span>
+          <div class="project-links">
+            <a href="https://v0.dev/chat/return-ride-4x5azDiTPRk?b=b_Jf1IdXFSdL6&p=0" target="_blank">View Project</a>
+          </div>
+        </div>
         <h3>Return Ride Application</h3>
-        <p>Designed and developed a modern ride-sharing application prototype focused on return journey optimization. The application features an intuitive user interface for booking rides, route optimization algorithms, and real-time tracking capabilities to enhance user experience in shared transportation.</p>
-        <a href="https://v0.dev/chat/return-ride-4x5azDiTPRk?b=b_Jf1IdXFSdL6&p=0" target="_blank">View Project</a>
+        <p>Designed and developed a modern ride-sharing application prototype focused on return journey optimization. Features an intuitive UI for booking rides, route optimization algorithms, and real-time tracking to enhance user experience in shared transportation.</p>
+        <div class="tech-tags">
+          <span class="ttag">UI/UX</span>
+          <span class="ttag">Routing</span>
+          <span class="ttag">Prototype</span>
+        </div>
       </div>
-      <div class="project-card">
+
+      <div class="project-card reveal-child">
+        <div class="project-header">
+          <span class="project-icon">&#129302;</span>
+          <div class="project-links">
+            <a href="https://personal-ai-chatbot-rih7.onrender.com/chatbot.html" target="_blank">Live Demo</a>
+          </div>
+        </div>
         <h3>Personal AI Chat Bot</h3>
-        <p>Developed an intelligent conversational AI chatbot using advanced natural language processing techniques. The bot features context-aware responses, machine learning-based conversation flow, and a user-friendly interface. Implemented using Python with AI/ML libraries for enhanced user interaction and automated customer support capabilities.</p>
-        <a href="https://personal-ai-chatbot-rih7.onrender.com/chatbot.html" target="_blank">View Live Demo</a>
+        <p>Developed an intelligent conversational AI chatbot using natural language processing techniques. The bot features context-aware responses, ML-based conversation flow, and a clean user interface — built with Python and AI/ML libraries for customer support and interactive engagement.</p>
+        <div class="tech-tags">
+          <span class="ttag">Python</span>
+          <span class="ttag">NLP</span>
+          <span class="ttag">AI/ML</span>
+        </div>
       </div>
+
     </div>
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="resume">
-    <h2>Resume</h2>
-    <p>Download my complete and updated resume to learn more about my education, skills, and experience.</p>
-    <a href="kanike_vinay_resume_latest.pdf" download class="btn">Download Resume PDF</a>
+  <section id="resume" class="resume reveal">
+    <div class="section-header">
+      <h2>Resume</h2>
+    </div>
+    <div class="resume-card">
+      <p>Download my complete and updated resume to learn more about my education, skills, and experience.</p>
+      <a href="kanike_vinay_resume_latest.pdf" download class="btn btn-primary" id="download-resume-btn">Download Resume PDF</a>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:kanikevinay709@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact" class="contact reveal">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p class="section-sub">I'm always open to new opportunities and conversations</p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Left: info panel -->
+      <div class="contact-info">
+        <p class="contact-intro">Whether you have an opportunity, a project idea, or just want to say hello — my inbox is always open. I'll try my best to get back to you promptly.</p>
+
+        <div class="contact-links">
+          <div class="contact-link-item" id="email-copy-btn" title="Click to copy email">
+            <span class="contact-link-icon">&#9993;</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val" id="email-display">kanikevinay709@gmail.com</span>
+            </div>
+            <span class="copy-hint" id="copy-hint">Copy</span>
+          </div>
+
+          <a class="contact-link-item" href="https://github.com/kanikevinay" target="_blank" rel="noopener">
+            <span class="contact-link-icon">&#128279;</span>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">github.com/kanikevinay</span>
+            </div>
+            <span class="copy-hint">Visit &rarr;</span>
+          </a>
+
+          <a class="contact-link-item" href="kanike_vinay_resume_latest.pdf" download>
+            <span class="contact-link-icon">&#128196;</span>
+            <div>
+              <span class="contact-link-label">Resume</span>
+              <span class="contact-link-val">Download PDF</span>
+            </div>
+            <span class="copy-hint">&#11015;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap">
+        <form action="mailto:kanikevinay709@gmail.com" method="post" enctype="text/plain" id="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" name="name" placeholder="Your full name" required id="contact-name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required id="contact-email">
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" name="subject" placeholder="What's this about?" id="contact-subject">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea name="message" placeholder="Write your message here..." required id="contact-message"></textarea>
+          </div>
+          <button type="submit" id="contact-submit">
+            <span>Send Message</span>
+            <span class="btn-arrow">&#10148;</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Kanike. All rights reserved.</p>
+    <p>&copy; <span id="footer-year"></span> Kanike Vinay. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
